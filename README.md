@@ -9,7 +9,7 @@
 ╚══════╝╚══════╝ ╚═════╝ ╚═╝      ╚═════╝ ╚══════╝╚═════╝
 ```
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=2800&pause=900&color=00FF94&center=true&vCenter=true&width=720&lines=%24+whoami;%24+./build_agents.sh+--mode%3Dautonomous;%24+sudo+rm+-rf+%2Fmanual_work;%24+echo+%22If+a+human+types+it+twice%2C+it's+a+bug.%22" alt="terminal" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=2800&pause=900&color=00FF94&center=true&vCenter=true&width=720&lines=%24+./build.sh+--mode%3Dautonomous;%24+ssh+root%40production;%24+%3E+shipping_systems_since_2018;%24+%3E+if+a+human+types+it+twice%2C+it's+a+bug" alt="terminal" />
 
 <br/>
 
@@ -21,137 +21,126 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=00FF94&height=2&section=header" width="100%" />
 
-```bash
-> ssh leopold@sibbjans.local
-[leopold@sibbjans ~]$ cat /etc/identity.conf
-```
+<br/>
 
-```yaml
-# /etc/identity.conf
-operator:        leopold
-location:        gotland.se :: lat=57.4684 lon=18.4867
-host:            otiva-prod-01
-role:            project_coordinator
-clearance:       jonas_nordlander_portfolio
-schedule:        mon-thu@gotland; fri@stockholm
-runtime:         03_years_uptime
-languages:       [sv_SE, en_US, ts]
-status:          0x01 (shipping)
+<div align="center">
+
+### `> ./whoami.sh`
+
+</div>
+
+```ts
+const leopold = {
+  builds:    ["full-stack apps", "AI agents", "MCP servers", "infra"],
+  ships:     "production systems",
+  obsesses:  ["multi-agent orchestration", "self-hosted infra", "DX"],
+  edits:     "with terminal velocity",
+  motto:     "if a human types it twice, it's a bug",
+};
 ```
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=00FF94&height=2&section=header" width="100%" />
 
-## ` ~/projects ` — currently running
-
-```bash
-[leopold@sibbjans ~]$ ps aux | grep -i "currently_shipping"
-```
-
-```
-PID    USER       %CPU  %MEM  PROJECT              STATUS     UPTIME
-─────  ─────────  ────  ────  ───────────────────  ─────────  ────────
-1337   leopold     94    87   sibbjans-ops         RUNNING    18d 04h
-1338   leopold     78    62   jarvis-orchestrator  RUNNING    42d 11h
-1339   leopold     65    91   sibbjans-energy      RUNNING    156d 02h
-1340   leopold     42    34   ai-kollegorna        RUNNING    08d 19h
-1341   leopold     12    08   tavio                IDLE       —
-```
+<br/>
 
 <div align="center">
 
+### `> ls ~/capabilities/`
+
+</div>
+
 <table>
 <tr>
-<td align="center" width="50%">
-
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=leopold-jpg&repo=sibbjans-ops&theme=transparent&hide_border=true&title_color=00FF94&text_color=8B949E&icon_color=00FF94&bg_color=0D1117" />
+<td valign="top" width="50%">
 
 ```
-┌─ sibbjans-ops ──────────────────┐
-│ Next.js 15 · Supabase · TS      │
-│ MCP server · 6 tools exposed    │
-│ Region: eu-central-1            │
-│ Mode:   agent-ready             │
-└─────────────────────────────────┘
+┌─ FRONTEND ─────────────────────┐
+│                                │
+│  ▸ React · Next.js · Vue       │
+│  ▸ TypeScript end-to-end       │
+│  ▸ Design systems · shadcn/ui  │
+│  ▸ Tailwind · Framer Motion    │
+│  ▸ Three.js · WebGL            │
+│                                │
+└────────────────────────────────┘
 ```
 
-</td>
-<td align="center" width="50%">
-
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=leopold-jpg&repo=jarvis&theme=transparent&hide_border=true&title_color=00FF94&text_color=8B949E&icon_color=00FF94&bg_color=0D1117" />
-
 ```
-┌─ jarvis-orchestrator ───────────┐
-│ Mac mini M4 · Docker sandboxed  │
-│ ws://localhost:18789            │
-│ Agents: sibbjans, otiva, tavio  │
-│ Channel: WhatsApp + voice       │
-└─────────────────────────────────┘
+┌─ BACKEND ──────────────────────┐
+│                                │
+│  ▸ Node · Bun · Python · Go    │
+│  ▸ REST · GraphQL · tRPC       │
+│  ▸ WebSockets · streaming      │
+│  ▸ Postgres · Supabase · Redis │
+│  ▸ Schema design · migrations  │
+│                                │
+└────────────────────────────────┘
 ```
 
-</td>
-</tr>
-<tr>
-<td align="center">
-
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=leopold-jpg&repo=sibbjans-energy&theme=transparent&hide_border=true&title_color=00FF94&text_color=8B949E&icon_color=00FF94&bg_color=0D1117" />
-
 ```
-┌─ sibbjans-energy ───────────────┐
-│ 150 kWp PV · 558 kWh BESS       │
-│ Genesal genset backup           │
-│ Fentrica EMS · peak shave       │
-│ Constraint: EU supply chain     │
-└─────────────────────────────────┘
+┌─ AI / AGENTS ──────────────────┐
+│                                │
+│  ▸ Multi-agent orchestration   │
+│  ▸ MCP server development      │
+│  ▸ Tool-calling architectures  │
+│  ▸ RAG · embeddings · vectors  │
+│  ▸ Voice pipelines · LLM ops   │
+│                                │
+└────────────────────────────────┘
 ```
 
 </td>
-<td align="center">
-
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=leopold-jpg&repo=ai-kollegorna&theme=transparent&hide_border=true&title_color=00FF94&text_color=8B949E&icon_color=00FF94&bg_color=0D1117" />
+<td valign="top" width="50%">
 
 ```
-┌─ ai-kollegorna ─────────────────┐
-│ Mac mini per customer           │
-│ 4,900 SEK / month               │
-│ Self-hosted sovereign compute   │
-│ Vercel/Linear/Stripe-coded UI   │
-└─────────────────────────────────┘
+┌─ INFRA / DEVOPS ───────────────┐
+│                                │
+│  ▸ Docker · containerization   │
+│  ▸ Self-hosted deployments     │
+│  ▸ Linux · bash · systemd      │
+│  ▸ Reverse proxies · Caddy     │
+│  ▸ CI/CD · GitHub Actions      │
+│                                │
+└────────────────────────────────┘
+```
+
+```
+┌─ SECURITY / OPS ───────────────┐
+│                                │
+│  ▸ Sandboxing · isolation      │
+│  ▸ Secrets rotation            │
+│  ▸ OAuth · SSO · auth flows    │
+│  ▸ Network hardening · VPN     │
+│  ▸ Audit logging               │
+│                                │
+└────────────────────────────────┘
+```
+
+```
+┌─ PRODUCT / SHIP ───────────────┐
+│                                │
+│  ▸ 0→1 product development     │
+│  ▸ Technical specs · scoping   │
+│  ▸ Vendor evaluation · DD      │
+│  ▸ Cross-functional delivery   │
+│  ▸ Bias to autonomous systems  │
+│                                │
+└────────────────────────────────┘
 ```
 
 </td>
 </tr>
 </table>
 
-</div>
-
-```bash
-[leopold@sibbjans ~]$ ls /var/log/recent_incidents/
-```
-
-```
-2025-XX-XX  jarvis_root_escape.log     # mac wiped, creds rotated, sandboxed
-2025-XX-XX  geab_connection_delay.log  # ongoing
-2025-XX-XX  enviment_financials.log    # caught in DD: 11k SEK rev, -762k loss
-```
-
 <img src="https://capsule-render.vercel.app/api?type=rect&color=00FF94&height=2&section=header" width="100%" />
 
-## ` ~/.toolbelt `
+<br/>
 
-```bash
-[leopold@sibbjans ~]$ ls -la /usr/local/bin | wc -l
-247
-[leopold@sibbjans ~]$ cat ~/.skillrc
-```
+<div align="center">
 
-```ini
-# ~/.skillrc — what i actually ship with
-[experience]
-shipping_systems   = since_2022
-shipping_websites  = since_2018
-shipping_agents    = since_2024
-production_grade   = true
-```
+### `> cat ~/.toolbelt`
+
+</div>
 
 <div align="center">
 
@@ -228,7 +217,6 @@ production_grade   = true
 ![ElevenLabs](https://img.shields.io/badge/-ElevenLabs-000?style=for-the-badge&logo=elevenlabs&logoColor=00FF94)
 ![Whisper](https://img.shields.io/badge/-Whisper-000?style=for-the-badge&logo=openai&logoColor=00FF94)
 ![Cursor](https://img.shields.io/badge/-Cursor-000?style=for-the-badge&logo=cursor&logoColor=00FF94)
-![Lovable](https://img.shields.io/badge/-Lovable-000?style=for-the-badge&logo=heart&logoColor=00FF94)
 
 #### ` infra · cloud · devops `
 
@@ -266,36 +254,19 @@ production_grade   = true
 
 </div>
 
-<details>
-<summary><code>$ stat ~/.skills/proficiency.json</code></summary>
-
-```json
-{
-  "build_full_stack_apps":   "production",
-  "ship_websites":           "production",
-  "design_database_schemas": "production",
-  "wire_up_apis":            "production",
-  "deploy_self_hosted":      "production",
-  "build_mcp_servers":       "production",
-  "orchestrate_agents":      "production",
-  "configure_networking":    "production",
-  "harden_servers":          "production",
-  "design_systems":          "production",
-  "ship_things_that_work":   "verified"
-}
-```
-
-</details>
-
 <img src="https://capsule-render.vercel.app/api?type=rect&color=00FF94&height=2&section=header" width="100%" />
 
-## ` /var/log/stats `
-
-```bash
-[leopold@sibbjans ~]$ uptime && htop
-```
+<br/>
 
 <div align="center">
+
+### `> tail -f /var/log/activity`
+
+<br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=leopold-jpg&bg_color=0D1117&color=00FF94&line=00FF94&point=FFFFFF&area=true&hide_border=true&custom_title=COMMIT%20ACTIVITY%20%2F%2F%20LAST%2031%20DAYS" width="100%" />
+
+<br/><br/>
 
 <img height="180" src="https://github-readme-stats.vercel.app/api?username=leopold-jpg&show_icons=true&hide_border=true&bg_color=0D1117&title_color=00FF94&text_color=8B949E&icon_color=00FF94&include_all_commits=true&count_private=true&rank_icon=github" />
 <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=leopold-jpg&layout=compact&hide_border=true&bg_color=0D1117&title_color=00FF94&text_color=8B949E&langs_count=10" />
@@ -306,23 +277,19 @@ production_grade   = true
 
 <br/><br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=leopold-jpg&bg_color=0D1117&color=00FF94&line=00FF94&point=FFFFFF&area=true&hide_border=true&custom_title=COMMIT%20ACTIVITY%20%2F%2F%20LAST%2031%20DAYS" />
-
-<br/><br/>
-
 <img src="https://github-profile-trophy.vercel.app/?username=leopold-jpg&theme=matrix&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10" />
 
 </div>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=00FF94&height=2&section=header" width="100%" />
 
-## ` ~/.contribution-graph `
-
-```bash
-[leopold@sibbjans ~]$ tail -f activity.log | snake
-```
+<br/>
 
 <div align="center">
+
+### `> tail -f activity.log | snake`
+
+<br/>
 
 ![Snake animation](https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/output/github-contribution-grid-snake-dark.svg)
 
@@ -330,7 +297,13 @@ production_grade   = true
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=00FF94&height=2&section=header" width="100%" />
 
-## ` /etc/principles `
+<br/>
+
+<div align="center">
+
+### `> cat /etc/principles`
+
+</div>
 
 ```c
 /* operating principles — non-negotiable */
@@ -338,40 +311,32 @@ production_grade   = true
 #define BIAS_TO_AUTONOMY      "if a human types it twice, it's a bug"
 #define BRIEFS_OVER_TICKETS   "tasks ship with execution context"
 #define SELF_HOSTED_DEFAULT   "i own the metal, the keys, the logs"
-#define EUROPEAN_SUPPLY       "hard requirement, not preference"
 #define NEVER_TRUST_DEFAULTS  "audit, sandbox, rotate, repeat"
 
 while (problem_unsolved) {
     ship();
     measure();
     iterate();
-    if (entropy++ > tolerance) refactor();
 }
 ```
 
-> ` ship the agent. then ship the agent that ships the agent. `
-
 <img src="https://capsule-render.vercel.app/api?type=rect&color=00FF94&height=2&section=header" width="100%" />
-
-## ` ~/contact `
-
-```bash
-[leopold@sibbjans ~]$ ssh leopold@linkedin
-```
-
-<div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=00FF94)](https://www.linkedin.com/in/leopold-seifert-3b3b5223b/)
-
-</div>
 
 <br/>
 
 <div align="center">
 
+### `> ssh leopold@linkedin`
+
+<br/>
+
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=00FF94)](https://www.linkedin.com/in/leopold-seifert-3b3b5223b/)
+
+<br/><br/>
+
 ```
 ─────────────────────────────────────────────────────────
-  uptime: 03y · last_commit: just_now · status: shipping
+  status: shipping  ·  last_commit: just_now  ·  ◉ live
 ─────────────────────────────────────────────────────────
 ```
 
