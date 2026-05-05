@@ -13,11 +13,13 @@
 
 <br/>
 
-[![visitors](https://img.shields.io/badge/dynamic/json?color=00FF94&label=VISITORS&query=value&url=https%3A%2F%2Fapi.countapi.xyz%2Fhit%2Fleopold-jpg%2Fprofile&style=for-the-badge&labelColor=000000)](https://github.com/leopold-jpg)
 [![followers](https://img.shields.io/github/followers/leopold-jpg?style=for-the-badge&color=00FF94&labelColor=000000&label=FOLLOWERS)](https://github.com/leopold-jpg)
 [![stars](https://img.shields.io/github/stars/leopold-jpg?style=for-the-badge&color=00FF94&labelColor=000000&label=STARS)](https://github.com/leopold-jpg)
+[![visitors](https://komarev.com/ghpvc/?username=leopold-jpg&style=for-the-badge&color=00FF94&labelColor=000000&label=VISITORS)](https://github.com/leopold-jpg)
 
 </div>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=00FF94&height=2&section=header" width="100%" />
 
 ```bash
 > ssh leopold@sibbjans.local
@@ -37,88 +39,90 @@ languages:       [sv_SE, en_US, ts]
 status:          0x01 (shipping)
 ```
 
+<img src="https://capsule-render.vercel.app/api?type=rect&color=00FF94&height=2&section=header" width="100%" />
+
+## ` ~/projects ` — currently running
+
 ```bash
 [leopold@sibbjans ~]$ ps aux | grep -i "currently_shipping"
 ```
 
----
-
-## ` ~/projects ` — currently running
-
 ```
-PID    USER       %CPU  %MEM  PROJECT              STATUS
-─────  ─────────  ────  ────  ───────────────────  ───────────
-1337   leopold     94    87   sibbjans-ops         RUNNING
-1338   leopold     78    62   jarvis-orchestrator  RUNNING
-1339   leopold     65    91   sibbjans-energy      RUNNING
-1340   leopold     42    34   ai-kollegorna        RUNNING
-1341   leopold     12    08   tavio                IDLE
+PID    USER       %CPU  %MEM  PROJECT              STATUS     UPTIME
+─────  ─────────  ────  ────  ───────────────────  ─────────  ────────
+1337   leopold     94    87   sibbjans-ops         RUNNING    18d 04h
+1338   leopold     78    62   jarvis-orchestrator  RUNNING    42d 11h
+1339   leopold     65    91   sibbjans-energy      RUNNING    156d 02h
+1340   leopold     42    34   ai-kollegorna        RUNNING    08d 19h
+1341   leopold     12    08   tavio                IDLE       —
 ```
 
-<details>
-<summary><code>$ cat sibbjans-ops/README</code></summary>
+<div align="center">
+
+<table>
+<tr>
+<td align="center" width="50%">
+
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=leopold-jpg&repo=sibbjans-ops&theme=transparent&hide_border=true&title_color=00FF94&text_color=8B949E&icon_color=00FF94&bg_color=0D1117" />
 
 ```
-┌─ sibbjans-ops ────────────────────────────────────────┐
-│ Stack:    Next.js 15 · Supabase (eu-central-1)        │
-│           TypeScript · Tailwind · shadcn/ui           │
-│ Schema:   tasks{ task_type, input_data, output_data,  │
-│           agent_instructions, execution_status,       │
-│           assigned_to: leopold|claude|jarvis }        │
-│ Server:   sibbjans-mcp-server (TS) · 6 tools exposed  │
-│ Region:   uklqqqrfvaoqmoluwius.supabase.co            │
-│ Mode:     agent-ready :: tasks ship with full briefs  │
-└───────────────────────────────────────────────────────┘
+┌─ sibbjans-ops ──────────────────┐
+│ Next.js 15 · Supabase · TS      │
+│ MCP server · 6 tools exposed    │
+│ Region: eu-central-1            │
+│ Mode:   agent-ready             │
+└─────────────────────────────────┘
 ```
-</details>
 
-<details>
-<summary><code>$ cat jarvis/orchestrator.conf</code></summary>
+</td>
+<td align="center" width="50%">
+
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=leopold-jpg&repo=jarvis&theme=transparent&hide_border=true&title_color=00FF94&text_color=8B949E&icon_color=00FF94&bg_color=0D1117" />
 
 ```
-┌─ jarvis-orchestrator ─────────────────────────────────┐
-│ Host:     mac-mini-m4 · 16GB · macOS sandboxed        │
-│ Runtime:  Docker (post-incident hardening, no root)   │
-│ Gateway:  ws://localhost:18789                        │
-│ Stack:    OpenClaw · Claude API · ElevenLabs          │
-│ Agents:   [sibbjans, otiva, tavio]                    │
-│ MCP:      gmail · gcal · gdrive · slack · supabase    │
-│ Channel:  WhatsApp ingress                            │
-│ Notes:    survived one (1) root incident, hardened    │
-└───────────────────────────────────────────────────────┘
+┌─ jarvis-orchestrator ───────────┐
+│ Mac mini M4 · Docker sandboxed  │
+│ ws://localhost:18789            │
+│ Agents: sibbjans, otiva, tavio  │
+│ Channel: WhatsApp + voice       │
+└─────────────────────────────────┘
 ```
-</details>
 
-<details>
-<summary><code>$ cat sibbjans-energy/topology.txt</code></summary>
+</td>
+</tr>
+<tr>
+<td align="center">
 
-```
-┌─ sibbjans-energy-stack ───────────────────────────────┐
-│ PV array:    150 kWp                                  │
-│ BESS:        558 kWh · SUNSYS HES L SKID              │
-│ Genset:      Genesal diesel backup                    │
-│ EMS:         Fentrica :: peak-shave + arbitrage       │
-│ EV:          Alfen (Fentrica-integrated, not Zaptec)  │
-│ Wind:        EM Wind WM 25kW VAWT (eval)              │
-│ Grid:        GEAB N4 LSP tariff · awaiting connection │
-│ Constraint:  EU supply chain :: hard requirement      │
-└───────────────────────────────────────────────────────┘
-```
-</details>
-
-<details>
-<summary><code>$ cat ai-kollegorna/spec.md</code></summary>
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=leopold-jpg&repo=sibbjans-energy&theme=transparent&hide_border=true&title_color=00FF94&text_color=8B949E&icon_color=00FF94&bg_color=0D1117" />
 
 ```
-┌─ ai-kollegorna ───────────────────────────────────────┐
-│ Product:  AI agents-as-a-service for Swedish SMEs     │
-│ Compute:  Mac mini per customer (self-hosted)         │
-│ Pricing:  4,900 SEK / month                           │
-│ Aesthetic: dark · cinematic · vercel/linear/stripe    │
-│ Thesis:   sovereign compute > shared GPU cloud        │
-└───────────────────────────────────────────────────────┘
+┌─ sibbjans-energy ───────────────┐
+│ 150 kWp PV · 558 kWh BESS       │
+│ Genesal genset backup           │
+│ Fentrica EMS · peak shave       │
+│ Constraint: EU supply chain     │
+└─────────────────────────────────┘
 ```
-</details>
+
+</td>
+<td align="center">
+
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=leopold-jpg&repo=ai-kollegorna&theme=transparent&hide_border=true&title_color=00FF94&text_color=8B949E&icon_color=00FF94&bg_color=0D1117" />
+
+```
+┌─ ai-kollegorna ─────────────────┐
+│ Mac mini per customer           │
+│ 4,900 SEK / month               │
+│ Self-hosted sovereign compute   │
+│ Vercel/Linear/Stripe-coded UI   │
+└─────────────────────────────────┘
+```
+
+</td>
+</tr>
+</table>
+
+</div>
 
 ```bash
 [leopold@sibbjans ~]$ ls /var/log/recent_incidents/
@@ -130,7 +134,7 @@ PID    USER       %CPU  %MEM  PROJECT              STATUS
 2025-XX-XX  enviment_financials.log    # caught in DD: 11k SEK rev, -762k loss
 ```
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=00FF94&height=2&section=header" width="100%" />
 
 ## ` ~/.toolbelt `
 
@@ -283,22 +287,34 @@ production_grade   = true
 
 </details>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=00FF94&height=2&section=header" width="100%" />
 
 ## ` /var/log/stats `
 
+```bash
+[leopold@sibbjans ~]$ uptime && htop
+```
+
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=leopold-jpg&show_icons=true&hide_border=true&bg_color=0D1117&title_color=00FF94&text_color=8B949E&icon_color=00FF94&include_all_commits=true&count_private=true&rank_icon=github" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=leopold-jpg&layout=compact&hide_border=true&bg_color=0D1117&title_color=00FF94&text_color=8B949E&langs_count=8" />
+<img height="180" src="https://github-readme-stats.vercel.app/api?username=leopold-jpg&show_icons=true&hide_border=true&bg_color=0D1117&title_color=00FF94&text_color=8B949E&icon_color=00FF94&include_all_commits=true&count_private=true&rank_icon=github" />
+<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=leopold-jpg&layout=compact&hide_border=true&bg_color=0D1117&title_color=00FF94&text_color=8B949E&langs_count=10" />
 
 <br/><br/>
 
 <img src="https://streak-stats.demolab.com?user=leopold-jpg&theme=dark&hide_border=true&background=0D1117&ring=00FF94&fire=00FF94&currStreakLabel=00FF94&sideNums=00FF94&sideLabels=8B949E&dates=8B949E&stroke=00FF94" />
 
+<br/><br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=leopold-jpg&bg_color=0D1117&color=00FF94&line=00FF94&point=FFFFFF&area=true&hide_border=true&custom_title=COMMIT%20ACTIVITY%20%2F%2F%20LAST%2031%20DAYS" />
+
+<br/><br/>
+
+<img src="https://github-profile-trophy.vercel.app/?username=leopold-jpg&theme=matrix&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10" />
+
 </div>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=00FF94&height=2&section=header" width="100%" />
 
 ## ` ~/.contribution-graph `
 
@@ -312,7 +328,7 @@ production_grade   = true
 
 </div>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=00FF94&height=2&section=header" width="100%" />
 
 ## ` /etc/principles `
 
@@ -335,7 +351,7 @@ while (problem_unsolved) {
 
 > ` ship the agent. then ship the agent that ships the agent. `
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=00FF94&height=2&section=header" width="100%" />
 
 ## ` ~/contact `
 
@@ -358,5 +374,7 @@ while (problem_unsolved) {
   uptime: 03y · last_commit: just_now · status: shipping
 ─────────────────────────────────────────────────────────
 ```
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=00FF94&height=80&section=footer" />
 
 </div>
