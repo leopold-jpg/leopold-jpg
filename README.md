@@ -4,9 +4,9 @@
 
 <br/><br/>
 
-[![followers](https://img.shields.io/github/followers/leopold-jpg?style=for-the-badge&color=00FF94&labelColor=0D1117&label=FOLLOWERS)](https://github.com/leopold-jpg)
-[![stars](https://img.shields.io/github/stars/leopold-jpg?style=for-the-badge&color=00FF94&labelColor=0D1117&label=STARS)](https://github.com/leopold-jpg)
-[![visitors](https://komarev.com/ghpvc/?username=leopold-jpg&style=for-the-badge&color=00FF94&labelColor=0D1117&label=VISITORS)](https://github.com/leopold-jpg)
+[![followers](https://img.shields.io/github/followers/leopold-jpg?style=for-the-badge&logo=github&logoColor=00FF94&color=00FF94&labelColor=161B22&label=FOLLOWERS)](https://github.com/leopold-jpg?tab=followers)
+[![stars](https://img.shields.io/github/stars/leopold-jpg?style=for-the-badge&logo=githubsponsors&logoColor=00FF94&color=00FF94&labelColor=161B22&label=STARS)](https://github.com/leopold-jpg)
+[![visitors](https://komarev.com/ghpvc/?username=leopold-jpg&style=for-the-badge&color=00FF94&label=VISITORS)](https://github.com/leopold-jpg)
 
 <br/>
 
