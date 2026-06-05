@@ -1,0 +1,29 @@
+name: Update README Activity
+
+on:
+  schedule:
+    # Once per day at 06:00 UTC — NOT */30, to avoid spamming commit history
+    - cron: "0 6 * * *"
+  # Allow manual runs from the Actions tab
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-activity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Update recent activity feed
+        uses: jamesgeorge007/github-activity-readme@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          # Max number of activity lines written between the markers
+          MAX_LINES: 10
+          COMMIT_MSG: "chore(activity): refresh recent activity feed [skip ci]"
