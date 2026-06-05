@@ -4,13 +4,22 @@
 
 <br/><br/>
 
-[![followers](https://img.shields.io/github/followers/leopold-jpg?style=for-the-badge&logo=github&logoColor=00FF94&color=00FF94&labelColor=161B22&label=FOLLOWERS)](https://github.com/leopold-jpg?tab=followers)
-[![stars](https://img.shields.io/github/stars/leopold-jpg?style=for-the-badge&logo=githubsponsors&logoColor=00FF94&color=00FF94&labelColor=161B22&label=STARS)](https://github.com/leopold-jpg)
-[![visitors](https://komarev.com/ghpvc/?username=leopold-jpg&style=for-the-badge&color=00FF94&label=VISITORS)](https://github.com/leopold-jpg)
+<!-- self-hosted stat strip — real data, regenerated daily on the `cards` branch (no shields/komarev) -->
+<img src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/cards/stats-strip.svg" width="100%" alt="stats — followers, stars, repos, contributions" />
 
 <br/>
 
 `▸ now` &nbsp; shipping autonomous multi-agent systems · self-hosting the whole stack &nbsp; `◉ live`
+
+</div>
+
+<br/>
+
+<img src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/main/assets/sections/swarm.svg" width="100%" alt="swarm --status" />
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/cards/swarm.svg" width="100%" alt="agent swarm — orchestrator dispatching live task-pulses to language agents" />
 
 </div>
 
@@ -87,6 +96,16 @@
 <!-- streak: public demolab instance. Self-hosted fork (streak-leopold.vercel.app) is deployed
      but needs env `TOKEN` (PHP app refuses to start without it) — flip URL after rotate-tokens.sh. -->
 <img src="https://streak-stats.demolab.com?user=leopold-jpg&theme=dark&hide_border=true&background=0D1117&ring=00FF94&fire=00FF94&currStreakLabel=00FF94&sideNums=E6EDF3&sideLabels=8B949E&dates=6E7681&stroke=00FF94" />
+
+</div>
+
+<br/>
+
+<img src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/main/assets/sections/contrib.svg" width="100%" alt="contributions --calendar" />
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/cards/contrib.svg" width="100%" alt="contribution heatmap — last 12 months" />
 
 </div>
 
