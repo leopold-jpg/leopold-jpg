@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/hero.svg" width="100%" alt="Leopold — autonomous multi-agent systems · self-hosted infrastructure" />
+<img src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/main/assets/hero.svg" width="100%" alt="Leopold — autonomous multi-agent systems · self-hosted infrastructure" />
 
 <br/><br/>
 
