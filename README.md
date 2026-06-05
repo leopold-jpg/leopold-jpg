@@ -14,13 +14,9 @@
 
 </div>
 
----
+<br/>
 
-<div align="center">
-
-### `> whoami`
-
-</div>
+<img src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/main/assets/sections/whoami.svg" width="100%" alt="whoami" />
 
 ```ts
 const leopold = {
@@ -31,13 +27,9 @@ const leopold = {
 };
 ```
 
----
+<br/>
 
-<div align="center">
-
-### `> ls ~/capabilities`
-
-</div>
+<img src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/main/assets/sections/capabilities.svg" width="100%" alt="ls ~/capabilities" />
 
 <table>
 <tr>
@@ -102,13 +94,9 @@ const leopold = {
 </tr>
 </table>
 
----
+<br/>
 
-<div align="center">
-
-### `> cat ~/.stack`
-
-</div>
+<img src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/main/assets/sections/stack.svg" width="100%" alt="cat ~/.stack" />
 
 ```text
 languages   TypeScript · Python · Go · Rust · Bash · SQL
@@ -121,26 +109,20 @@ infra       Docker · Vercel · Cloudflare · Caddy · Tailscale
 systems     Linux · ARM · SSH · WireGuard · Raspberry Pi
 ```
 
----
+<br/>
 
-<div align="center">
-
-### `> git log --oneline -10`
-
-</div>
+<img src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/main/assets/sections/activity.svg" width="100%" alt="git log --oneline" />
 
 <!--START_SECTION:activity-->
 1. 🎉 Merged PR [#1](https://github.com/leopold-jpg/leopold-jpg/pull/1) in [leopold-jpg/leopold-jpg](https://github.com/leopold-jpg/leopold-jpg)
 2. 💪 Opened PR [#1](https://github.com/leopold-jpg/leopold-jpg/pull/1) in [leopold-jpg/leopold-jpg](https://github.com/leopold-jpg/leopold-jpg)
 <!--END_SECTION:activity-->
 
----
+<br/>
+
+<img src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/main/assets/sections/stats.svg" width="100%" alt="stats --self-hosted" />
 
 <div align="center">
-
-### `> stats --self-hosted`
-
-<br/>
 
 <!-- STATS_BASE: https://grs-leopold.vercel.app  — self-hosted github-readme-stats (counts private repos, not rate-limited).
      If you rename the Vercel project, change the URL once here, then run from repo root:
@@ -156,13 +138,11 @@ systems     Linux · ARM · SSH · WireGuard · Raspberry Pi
 
 </div>
 
----
+<br/>
+
+<img src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/main/assets/sections/snake.svg" width="100%" alt="contributions | snake" />
 
 <div align="center">
-
-### `> contributions | snake`
-
-<br/>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/output/github-contribution-grid-snake-dark.svg" />
@@ -172,13 +152,9 @@ systems     Linux · ARM · SSH · WireGuard · Raspberry Pi
 
 </div>
 
----
+<br/>
 
-<div align="center">
-
-### `> cat /etc/principles`
-
-</div>
+<img src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/main/assets/sections/principles.svg" width="100%" alt="cat /etc/principles" />
 
 ```c
 /* operating principles — non-negotiable */
@@ -191,11 +167,11 @@ systems     Linux · ARM · SSH · WireGuard · Raspberry Pi
 while (problem_unsolved) { ship(); measure(); iterate(); }
 ```
 
----
+<br/>
+
+<img src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/main/assets/sections/contact.svg" width="100%" alt="ssh leopold@linkedin" />
 
 <div align="center">
-
-### `> ssh leopold@linkedin`
 
 <br/>
 
