@@ -18,14 +18,7 @@
 
 <img src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/main/assets/sections/whoami.svg" width="100%" alt="whoami" />
 
-```ts
-const leopold = {
-  builds:   ["full-stack apps", "AI agents", "MCP servers", "infra"],
-  ships:    "production systems",
-  obsesses: ["multi-agent orchestration", "self-hosted infra", "DX"],
-  motto:    "if a human types it twice, it's a bug",
-};
-```
+<img src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/main/assets/panels/whoami.svg" width="100%" alt="const leopold = { builds, ships, obsesses, motto }" />
 
 <br/>
 
@@ -66,16 +59,7 @@ const leopold = {
 
 <img src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/main/assets/sections/stack.svg" width="100%" alt="cat ~/.stack" />
 
-```text
-languages   TypeScript · Python · Go · Rust · Bash · SQL
-runtime     Node · Bun · Deno · Vite · Turborepo · pnpm
-frontend    Next.js · React · Svelte · Tailwind · Three.js
-backend     Express · FastAPI · tRPC · GraphQL · Hono
-data        Postgres · Supabase · Redis · Prisma · ClickHouse
-ai/agents   Claude · MCP · OpenAI · LangChain · RAG · Whisper
-infra       Docker · Vercel · Cloudflare · Caddy · Tailscale
-systems     Linux · ARM · SSH · WireGuard · Raspberry Pi
-```
+<img src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/main/assets/panels/stack.svg" width="100%" alt="stack: languages, runtime, frontend, backend, data, ai/agents, infra, systems" />
 
 <br/>
 
@@ -124,16 +108,7 @@ systems     Linux · ARM · SSH · WireGuard · Raspberry Pi
 
 <img src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/main/assets/sections/principles.svg" width="100%" alt="cat /etc/principles" />
 
-```c
-/* operating principles — non-negotiable */
-
-#define BIAS_TO_AUTONOMY      "if a human types it twice, it's a bug"
-#define BRIEFS_OVER_TICKETS   "tasks ship with execution context"
-#define SELF_HOSTED_DEFAULT   "i own the metal, the keys, the logs"
-#define NEVER_TRUST_DEFAULTS  "audit, sandbox, rotate, repeat"
-
-while (problem_unsolved) { ship(); measure(); iterate(); }
-```
+<img src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/main/assets/panels/principles.svg" width="100%" alt="operating principles — bias to autonomy, briefs over tickets, self-hosted default, never trust defaults" />
 
 <br/>
 
