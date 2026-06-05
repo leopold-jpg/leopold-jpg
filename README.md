@@ -1,17 +1,8 @@
 <div align="center">
 
-```
-██╗     ███████╗ ██████╗ ██████╗  ██████╗ ██╗     ██████╗
-██║     ██╔════╝██╔═══██╗██╔══██╗██╔═══██╗██║     ██╔══██╗
-██║     █████╗  ██║   ██║██████╔╝██║   ██║██║     ██║  ██║
-██║     ██╔══╝  ██║   ██║██╔═══╝ ██║   ██║██║     ██║  ██║
-███████╗███████╗╚██████╔╝██║     ╚██████╔╝███████╗██████╔╝
-╚══════╝╚══════╝ ╚═════╝ ╚═╝      ╚═════╝ ╚══════╝╚═════╝
-```
+<img src="./assets/hero.svg" width="100%" alt="Leopold — autonomous multi-agent systems · self-hosted infrastructure" />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2800&pause=900&color=00FF94&center=true&vCenter=true&width=720&lines=%24+./build.sh+--mode%3Dautonomous;%24+%3E+shipping+production+systems;%24+%3E+if+a+human+types+it+twice%2C+it's+a+bug" alt="terminal" />
-
-<br/>
+<br/><br/>
 
 [![followers](https://img.shields.io/github/followers/leopold-jpg?style=for-the-badge&color=00FF94&labelColor=0D1117&label=FOLLOWERS)](https://github.com/leopold-jpg)
 [![stars](https://img.shields.io/github/stars/leopold-jpg?style=for-the-badge&color=00FF94&labelColor=0D1117&label=STARS)](https://github.com/leopold-jpg)
