@@ -283,9 +283,9 @@ const leopold = {
 
 <br/>
 
-<!-- NOTE: activity-graph, streak-stats and trophy below are separate third-party services
-     (NOT github-readme-stats) — still on public, rate-limited instances. Self-host later if they flake. -->
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=leopold-jpg&bg_color=0D1117&color=00FF94&line=00FF94&point=FFFFFF&area=true&hide_border=true&custom_title=COMMIT%20ACTIVITY%20%2F%2F%20LAST%2031%20DAYS" width="100%" />
+<!-- Self-hosted activity-graph instance (graph-leopold.vercel.app). Add a GitHub token as
+     env `TOKEN` on the Vercel project for higher rate limits / private data — see rotate-tokens.sh -->
+<img src="https://graph-leopold.vercel.app/graph?username=leopold-jpg&bg_color=0D1117&color=00FF94&line=00FF94&point=FFFFFF&area=true&hide_border=true&custom_title=COMMIT%20ACTIVITY%20%2F%2F%20LAST%2031%20DAYS&cache_seconds=21600" width="100%" />
 
 <br/><br/>
 
@@ -297,10 +297,14 @@ const leopold = {
 
 <br/><br/>
 
+<!-- streak: on public demolab instance. Self-hosted fork (streak-leopold.vercel.app) is deployed
+     but needs env `TOKEN` (PHP app refuses to start without it) — flip URL after rotate-tokens.sh. -->
 <img src="https://streak-stats.demolab.com?user=leopold-jpg&theme=dark&hide_border=true&background=0D1117&ring=00FF94&fire=00FF94&currStreakLabel=00FF94&sideNums=00FF94&sideLabels=8B949E&dates=8B949E&stroke=00FF94" />
 
 <br/><br/>
 
+<!-- trophy: on public instance. Self-hosted fork (trophy-leopold.vercel.app) is deployed
+     but needs env `GITHUB_TOKEN1` to query the GraphQL API — flip URL after rotate-tokens.sh. -->
 <img src="https://github-profile-trophy.vercel.app/?username=leopold-jpg&theme=matrix&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10" />
 
 </div>
@@ -363,9 +367,9 @@ while (problem_unsolved) {
 <br/><br/>
 
 ```
-─────────────────────────────────────────────────────────
-  status: shipping  ·  last_commit: just_now  ·  ◉ live
-─────────────────────────────────────────────────────────
+──────────────────────────────────────────────────────────────
+  ◉ shipping    ·    ⚡ mode: autonomous    ·    ⬢ stack: self-hosted
+──────────────────────────────────────────────────────────────
 ```
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=00FF94&height=80&section=footer" />
