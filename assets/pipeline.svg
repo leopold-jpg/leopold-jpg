@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="158" viewBox="0 0 840 158" fill="none" role="img" aria-label="deploy pipeline — commit, build, test, deploy, ship">
+  <defs>
+    <linearGradient id="wire" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00FF94" stop-opacity="0.15"/><stop offset="0.5" stop-color="#00FF94" stop-opacity="0.5"/><stop offset="1" stop-color="#00FF94" stop-opacity="0.15"/>
+    </linearGradient>
+    <filter id="pglow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="1.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect x="1" y="1" width="838" height="156" rx="14" fill="#0D1117" stroke="#21262D" stroke-width="1.5"/>
+
+  <!-- header -->
+  <circle cx="24" cy="24" r="4.5" fill="#30363D"/><circle cx="40" cy="24" r="4.5" fill="#30363D"/><circle cx="56" cy="24" r="4.5" fill="#30363D"/>
+  <text x="78" y="28" font-family="'JetBrains Mono',monospace" font-size="12.5" fill="#8B949E">pipeline — ci/cd · branch main</text>
+  <text x="816" y="28" text-anchor="end" font-family="'JetBrains Mono',monospace" font-size="11.5" fill="#00FF94">● last run: passing</text>
+  <line x1="20" y1="42" x2="820" y2="42" stroke="#21262D"/>
+
+  <!-- wire + flowing job tokens -->
+  <line x1="110" y1="96" x2="730" y2="96" stroke="url(#wire)" stroke-width="2"/>
+  <g filter="url(#pglow)">
+    <circle r="3.5" fill="#00FF94"><animateMotion path="M 110 96 L 730 96" dur="3.4s" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="3.4s" repeatCount="indefinite"/></circle>
+    <circle r="3.5" fill="#00FF94"><animateMotion path="M 110 96 L 730 96" dur="3.4s" begin="1.13s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="3.4s" begin="1.13s" repeatCount="indefinite"/></circle>
+    <circle r="3.5" fill="#00FF94"><animateMotion path="M 110 96 L 730 96" dur="3.4s" begin="2.26s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="3.4s" begin="2.26s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- stages -->
+  <g font-family="'JetBrains Mono',monospace" font-size="12" fill="#E6EDF3" text-anchor="middle">
+    <!-- commit -->
+    <g transform="translate(110,96)">
+      <circle r="22" fill="#161B22" stroke="#00FF94" stroke-width="1.5"/>
+      <circle r="22" fill="none" stroke="#00FF94" stroke-width="1.5" opacity="0.5"><animate attributeName="r" values="22;30;22" dur="3s" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.5;0;0.5" dur="3s" begin="0s" repeatCount="indefinite"/></circle>
+      <circle r="5" fill="none" stroke="#00FF94" stroke-width="2"/><line x1="0" y1="5" x2="0" y2="11" stroke="#00FF94" stroke-width="2"/>
+    </g>
+    <text x="110" y="134">commit</text>
+    <!-- build -->
+    <g transform="translate(265,96)">
+      <circle r="22" fill="#161B22" stroke="#00FF94" stroke-width="1.5"/>
+      <circle r="22" fill="none" stroke="#00FF94" stroke-width="1.5" opacity="0.5"><animate attributeName="r" values="22;30;22" dur="3s" begin="0.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.5;0;0.5" dur="3s" begin="0.6s" repeatCount="indefinite"/></circle>
+      <rect x="-7" y="-7" width="6" height="6" rx="1" fill="#00FF94"/><rect x="1" y="-7" width="6" height="6" rx="1" fill="#00FF94" opacity="0.6"/><rect x="-7" y="1" width="6" height="6" rx="1" fill="#00FF94" opacity="0.6"/><rect x="1" y="1" width="6" height="6" rx="1" fill="#00FF94"/>
+    </g>
+    <text x="265" y="134">build</text>
+    <!-- test -->
+    <g transform="translate(420,96)">
+      <circle r="22" fill="#161B22" stroke="#00FF94" stroke-width="1.5"/>
+      <circle r="22" fill="none" stroke="#00FF94" stroke-width="1.5" opacity="0.5"><animate attributeName="r" values="22;30;22" dur="3s" begin="1.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.5;0;0.5" dur="3s" begin="1.2s" repeatCount="indefinite"/></circle>
+      <path d="M -7 0 L -2 6 L 8 -7" fill="none" stroke="#00FF94" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text x="420" y="134">test</text>
+    <!-- deploy -->
+    <g transform="translate(575,96)">
+      <circle r="22" fill="#161B22" stroke="#00FF94" stroke-width="1.5"/>
+      <circle r="22" fill="none" stroke="#00FF94" stroke-width="1.5" opacity="0.5"><animate attributeName="r" values="22;30;22" dur="3s" begin="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.5;0;0.5" dur="3s" begin="1.8s" repeatCount="indefinite"/></circle>
+      <path d="M 0 8 L 0 -7 M -6 -1 L 0 -7 L 6 -1" fill="none" stroke="#00FF94" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text x="575" y="134">deploy</text>
+    <!-- ship -->
+    <g transform="translate(730,96)">
+      <circle r="22" fill="#0C2A1C" stroke="#00FF94" stroke-width="2" filter="url(#pglow)"/>
+      <path d="M 7 -7 L -6 -2 L -1 1 L 1 7 L 4 1 Z" fill="#00FF94"/>
+    </g>
+    <text x="730" y="134" fill="#00FF94">ship</text>
+  </g>
+</svg>

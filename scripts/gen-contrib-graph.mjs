@@ -72,13 +72,16 @@ for (let day = 0; day < 7; day++) {
   for (const wi of order) pts.push(`${(LEFT + wi * STEP + CELL / 2).toFixed(0)} ${(TOP + day * STEP + CELL / 2).toFixed(0)}`);
 }
 const pathD = 'M ' + pts.join(' L ');
-const DUR = 18, SEG = 8;
+// tight, connected snake body — segments spaced ~1 cell apart so it reads as one
+// slithering shape, not scattered dots. Head bright, tail tapers + fades.
+const DUR = 13, SEG = 18, OFFSET = (DUR / pts.length) * 1.0;
 let snake = `<g filter="url(#snakeglow)">`;
 for (let i = 0; i < SEG; i++) {
-  const r = (6 - i * 0.55).toFixed(1);
-  const op = (1 - i * 0.1).toFixed(2);
-  const col = i === 0 ? '#00FF94' : '#1FBE6B';
-  snake += `<circle r="${r}" fill="${col}" opacity="${op}"><animateMotion path="${pathD}" dur="${DUR}s" begin="-${(i * 0.20).toFixed(2)}s" repeatCount="indefinite"/></circle>`;
+  const t = i / (SEG - 1);
+  const r = (6.4 - t * 4.6).toFixed(1);
+  const col = i === 0 ? '#CFFFE8' : t < 0.25 ? '#00FF94' : t < 0.6 ? '#13C46E' : '#0E7A45';
+  const op = (1 - t * 0.5).toFixed(2);
+  snake += `<circle r="${r}" fill="${col}" opacity="${op}"><animateMotion path="${pathD}" dur="${DUR}s" begin="-${(i * OFFSET).toFixed(3)}s" repeatCount="indefinite"/></circle>`;
 }
 snake += `</g>`;
 
