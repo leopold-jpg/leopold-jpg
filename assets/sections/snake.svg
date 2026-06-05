@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="46" viewBox="0 0 840 46" fill="none" role="img" aria-label="contributions | snake">
+  <defs>
+    <filter id="g" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="1.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect x="1" y="8" width="244" height="30" rx="8" fill="#161B22" stroke="#21262D"/>
+  <text x="16" y="28" font-family="'JetBrains Mono','SF Mono',ui-monospace,monospace" font-size="14" font-weight="700" fill="#00FF94" filter="url(#g)">▸</text>
+  <text x="34" y="28" font-family="'JetBrains Mono','SF Mono',ui-monospace,monospace" font-size="14" fill="#E6EDF3">contributions | snake</text>
+  <line x1="260" y1="23" x2="824" y2="23" stroke="#21262D" stroke-width="1.5"/>
+  <text x="818" y="27" text-anchor="end" font-family="'JetBrains Mono','SF Mono',ui-monospace,monospace" font-size="12" fill="#6E7681">// 1y</text>
+  <circle cx="834" cy="23" r="3" fill="#00FF94"><animate attributeName="opacity" values="1;0.35;1" dur="2.4s" repeatCount="indefinite"/></circle>
+</svg>
