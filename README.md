@@ -29,66 +29,34 @@ const leopold = {
 
 <br/>
 
+<img src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/main/assets/cards/focus.svg" width="100%" alt="focus allocation — multi-agent 40%, self-hosted infra 32%, product 28%" />
+
+<br/>
+
 <img src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/main/assets/sections/capabilities.svg" width="100%" alt="ls ~/capabilities" />
 
 <table>
 <tr>
 <td valign="top" width="50%">
 
-```
-┌─ BUILD ────────────────────────┐
-│                                │
-│  ▸ Full-stack · React · Next   │
-│  ▸ Node · Bun · Python · Go    │
-│  ▸ REST · GraphQL · tRPC · WS  │
-│  ▸ Postgres · Supabase · Redis │
-│                                │
-└────────────────────────────────┘
-```
+<img src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/main/assets/cards/build.svg" width="100%" alt="BUILD — full-stack, Node/Python/Go, APIs, Postgres" />
 
 </td>
 <td valign="top" width="50%">
 
-```
-┌─ AI / AGENTS ──────────────────┐
-│                                │
-│  ▸ Multi-agent orchestration   │
-│  ▸ MCP server development      │
-│  ▸ Tool-calling architectures  │
-│  ▸ RAG · embeddings · voice    │
-│                                │
-└────────────────────────────────┘
-```
+<img src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/main/assets/cards/ai.svg" width="100%" alt="AI / AGENTS — multi-agent orchestration, MCP, tool-calling, RAG" />
 
 </td>
 </tr>
 <tr>
 <td valign="top" width="50%">
 
-```
-┌─ INFRA / OPS ──────────────────┐
-│                                │
-│  ▸ Docker · self-hosted deploy │
-│  ▸ Linux · systemd · Caddy     │
-│  ▸ CI/CD · GitHub Actions      │
-│  ▸ Sandboxing · secrets · VPN  │
-│                                │
-└────────────────────────────────┘
-```
+<img src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/main/assets/cards/infra.svg" width="100%" alt="INFRA / OPS — Docker, self-hosted, Linux, CI/CD, sandboxing" />
 
 </td>
 <td valign="top" width="50%">
 
-```
-┌─ SHIP ─────────────────────────┐
-│                                │
-│  ▸ 0→1 product development     │
-│  ▸ Technical specs · scoping   │
-│  ▸ Vendor eval · due diligence │
-│  ▸ Bias to autonomous systems  │
-│                                │
-└────────────────────────────────┘
-```
+<img src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/main/assets/cards/ship.svg" width="100%" alt="SHIP — 0 to 1 product, specs, vendor eval, autonomous systems" />
 
 </td>
 </tr>
@@ -177,10 +145,8 @@ while (problem_unsolved) { ship(); measure(); iterate(); }
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=00FF94)](https://www.linkedin.com/in/leopold-seifert-3b3b5223b/)
 
+</div>
+
 <br/>
 
-```
-  ◉ shipping    ·    ⚡ mode: autonomous    ·    ⬢ stack: self-hosted
-```
-
-</div>
+<img src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/main/assets/footer.svg" width="100%" alt="Connection to production closed — thanks for scrolling" />
