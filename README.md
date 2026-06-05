@@ -269,6 +269,8 @@ const leopold = {
 </div>
 
 <!--START_SECTION:activity-->
+1. 🎉 Merged PR [#1](https://github.com/leopold-jpg/leopold-jpg/pull/1) in [leopold-jpg/leopold-jpg](https://github.com/leopold-jpg/leopold-jpg)
+2. 💪 Opened PR [#1](https://github.com/leopold-jpg/leopold-jpg/pull/1) in [leopold-jpg/leopold-jpg](https://github.com/leopold-jpg/leopold-jpg)
 <!--END_SECTION:activity-->
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=00FF94&height=2&section=header" width="100%" />
