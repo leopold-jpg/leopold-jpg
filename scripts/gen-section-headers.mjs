@@ -22,6 +22,7 @@ const SECTIONS = {
   'whoami':       { cmd: 'whoami',             meta: '// who' },
   'swarm':        { cmd: 'swarm --status',     meta: '// agents' },
   'contrib':      { cmd: 'contributions --calendar', meta: '// last 12mo' },
+  'pipeline':     { cmd: 'pipeline --watch',    meta: '// ci/cd' },
   'capabilities': { cmd: 'ls ~/capabilities',  meta: '// what i build' },
   'stack':        { cmd: 'cat ~/.stack',       meta: '// tooling' },
   'activity':     { cmd: 'git log --oneline',  meta: '// recent' },

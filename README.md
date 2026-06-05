@@ -111,15 +111,11 @@
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/main/assets/sections/snake.svg" width="100%" alt="contributions | snake" />
+<img src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/main/assets/sections/pipeline.svg" width="100%" alt="pipeline --watch" />
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/output/github-contribution-grid-snake.svg" />
-  <img alt="Snake animation" src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/output/github-contribution-grid-snake.svg" />
-</picture>
+<img src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/main/assets/pipeline.svg" width="100%" alt="deploy pipeline — commit · build · test · deploy · ship" />
 
 </div>
 
