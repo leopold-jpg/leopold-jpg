@@ -29,8 +29,10 @@ jobs:
           node-version: 20
 
       - name: Generate self-hosted cards
+        # PROFILE_TOKEN (classic PAT: read:user + repo) unlocks private contributions
+        # (real 146 count) and private-repo languages. Falls back to GITHUB_TOKEN (public only).
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
         run: |
           mkdir -p dist
           node scripts/gen-stats-strip.mjs  leopold-jpg dist/stats-strip.svg
