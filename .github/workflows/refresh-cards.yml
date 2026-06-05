@@ -1,0 +1,46 @@
+name: Refresh Cards
+
+on:
+  schedule:
+    # Once per day at 05:30 UTC — regenerate the data-driven SVGs
+    - cron: "30 5 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/gen-stats-strip.mjs"
+      - "scripts/gen-contrib-graph.mjs"
+      - "scripts/gen-swarm.mjs"
+      - ".github/workflows/refresh-cards.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout (scripts on main)
+        uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate self-hosted cards
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p dist
+          node scripts/gen-stats-strip.mjs  leopold-jpg dist/stats-strip.svg
+          node scripts/gen-contrib-graph.mjs leopold-jpg dist/contrib.svg
+          node scripts/gen-swarm.mjs         leopold-jpg dist/swarm.svg
+
+      - name: Publish to cards branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: cards
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
