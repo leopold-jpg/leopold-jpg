@@ -25,24 +25,24 @@ for (const repo of j.data.user.repositories.nodes)
   for (const e of repo.languages.edges)
     totals[e.node.name] = (totals[e.node.name] || 0) + e.size;
 
-// fallback so the swarm is never empty / sparse
-const FALLBACK = { TypeScript: 5, Python: 4, Go: 3, Rust: 2, Bash: 2, Shell: 1 };
-let langs = Object.entries(totals);
-if (langs.length < 4) for (const [k, v] of Object.entries(FALLBACK)) if (!totals[k]) langs.push([k, v]);
-langs.sort((a, b) => b[1] - a[1]);
-langs = langs.slice(0, 7);
-const sum = langs.reduce((a, [, v]) => a + v, 0) || 1;
+// only fall back when there is genuinely no data; never show 0% padding nodes
+const FALLBACK = { TypeScript: 5, Python: 4, Go: 3, Rust: 2, Bash: 1 };
+let raw = Object.entries(totals).sort((a, b) => b[1] - a[1]);
+if (raw.length === 0) raw = Object.entries(FALLBACK).sort((a, b) => b[1] - a[1]);
+raw = raw.slice(0, 8);
+const sum = raw.reduce((a, [, v]) => a + v, 0) || 1;
+// compute share, drop anything that rounds to 0%, keep top 7
+let langs = raw.map(([name, v]) => [name, Math.round((v / sum) * 100)]).filter(([, p]) => p >= 1).slice(0, 7);
 
 const W = 840, H = 420, cx = 420, cy = 214, R = 150;
 const N = langs.length;
 const MONO = "'JetBrains Mono',ui-monospace,monospace";
 
 let edges = '', pulses = '', nodes = '';
-langs.forEach(([name, size], i) => {
+langs.forEach(([name, pct], i) => {
   const ang = (-Math.PI / 2) + (i * 2 * Math.PI / N);
   const nx = +(cx + R * Math.cos(ang)).toFixed(1);
   const ny = +(cy + R * Math.sin(ang)).toFixed(1);
-  const pct = Math.round((size / sum) * 100);
   const nr = 14 + Math.min(14, pct / 4);            // node size scales with share
   const begin = (i * 0.42).toFixed(2);
   edges += `<line x1="${cx}" y1="${cy}" x2="${nx}" y2="${ny}" stroke="#21262D" stroke-width="1.5"/>`;

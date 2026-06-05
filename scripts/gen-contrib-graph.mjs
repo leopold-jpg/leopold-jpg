@@ -64,12 +64,27 @@ const legend = `<text x="${legendX - 36}" y="${legendY + 10}" font-family="'JetB
   `<text x="${legendX + RAMP.length * 18 + 4}" y="${legendY + 10}" font-family="'JetBrains Mono',monospace" font-size="10" fill="#6E7681">more</text>`;
 
 const gridW = weeks.length * STEP;
+
+// serpentine path through every cell centre — the snake glides over the grid
+const pts = [];
+for (let day = 0; day < 7; day++) {
+  const order = day % 2 === 0 ? [...weeks.keys()] : [...weeks.keys()].reverse();
+  for (const wi of order) pts.push(`${(LEFT + wi * STEP + CELL / 2).toFixed(0)} ${(TOP + day * STEP + CELL / 2).toFixed(0)}`);
+}
+const pathD = 'M ' + pts.join(' L ');
+const DUR = 18, SEG = 8;
+let snake = `<g filter="url(#snakeglow)">`;
+for (let i = 0; i < SEG; i++) {
+  const r = (6 - i * 0.55).toFixed(1);
+  const op = (1 - i * 0.1).toFixed(2);
+  const col = i === 0 ? '#00FF94' : '#1FBE6B';
+  snake += `<circle r="${r}" fill="${col}" opacity="${op}"><animateMotion path="${pathD}" dur="${DUR}s" begin="-${(i * 0.20).toFixed(2)}s" repeatCount="indefinite"/></circle>`;
+}
+snake += `</g>`;
+
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" fill="none" role="img" aria-label="${cal.totalContributions} contributions in the last year">
   <defs>
-    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#00FF94" stop-opacity="0"/><stop offset="0.5" stop-color="#00FF94" stop-opacity="0.14"/><stop offset="1" stop-color="#00FF94" stop-opacity="0"/>
-    </linearGradient>
-    <clipPath id="grid"><rect x="${LEFT}" y="${TOP}" width="${gridW}" height="${7 * STEP}"/></clipPath>
+    <filter id="snakeglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
   <rect x="1" y="1" width="${W - 2}" height="${H - 2}" rx="14" fill="#0D1117" stroke="#21262D" stroke-width="1.5"/>
   <rect x="1" y="1" width="${W - 2}" height="40" rx="14" fill="#161B22"/><rect x="1" y="26" width="${W - 2}" height="15" fill="#161B22"/>
@@ -80,7 +95,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" 
   ${monthLabels}
   ${dayLabels}
   ${cells}
-  <g clip-path="url(#grid)"><rect x="0" y="${TOP}" width="120" height="${7 * STEP}" fill="url(#sweep)"><animate attributeName="x" values="${LEFT - 120};${LEFT + gridW}" dur="5s" repeatCount="indefinite"/></rect></g>
+  ${snake}
   ${legend}
 </svg>
 `;
