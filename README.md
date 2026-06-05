@@ -17,6 +17,10 @@
 [![stars](https://img.shields.io/github/stars/leopold-jpg?style=for-the-badge&color=00FF94&labelColor=000000&label=STARS)](https://github.com/leopold-jpg)
 [![visitors](https://komarev.com/ghpvc/?username=leopold-jpg&style=for-the-badge&color=00FF94&labelColor=000000&label=VISITORS)](https://github.com/leopold-jpg)
 
+<br/>
+
+`▸ now` &nbsp; shipping autonomous multi-agent systems · self-hosting the whole stack &nbsp; `◉ live`
+
 </div>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=00FF94&height=2&section=header" width="100%" />
@@ -260,16 +264,34 @@ const leopold = {
 
 <div align="center">
 
+### `> git log --oneline -10`
+
+</div>
+
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=00FF94&height=2&section=header" width="100%" />
+
+<br/>
+
+<div align="center">
+
 ### `> tail -f /var/log/activity`
 
 <br/>
 
+<!-- NOTE: activity-graph, streak-stats and trophy below are separate third-party services
+     (NOT github-readme-stats) — still on public, rate-limited instances. Self-host later if they flake. -->
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=leopold-jpg&bg_color=0D1117&color=00FF94&line=00FF94&point=FFFFFF&area=true&hide_border=true&custom_title=COMMIT%20ACTIVITY%20%2F%2F%20LAST%2031%20DAYS" width="100%" />
 
 <br/><br/>
 
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=leopold-jpg&show_icons=true&hide_border=true&bg_color=0D1117&title_color=00FF94&text_color=8B949E&icon_color=00FF94&include_all_commits=true&count_private=true&rank_icon=github" />
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=leopold-jpg&layout=compact&hide_border=true&bg_color=0D1117&title_color=00FF94&text_color=8B949E&langs_count=10" />
+<!-- STATS_BASE: https://grs-leopold.vercel.app  — self-hosted github-readme-stats (counts private repos, not rate-limited).
+     If you rename the Vercel project, change the URL once here, then run from repo root:
+     sed -i '' 's#https://grs-leopold.vercel.app#https://YOUR-NEW-INSTANCE.vercel.app#g' README.md -->
+<img height="180" src="https://grs-leopold.vercel.app/api?username=leopold-jpg&show_icons=true&hide_border=true&bg_color=0D1117&title_color=00FF94&text_color=8B949E&icon_color=00FF94&include_all_commits=true&count_private=true&rank_icon=github&cache_seconds=21600" />
+<img height="180" src="https://grs-leopold.vercel.app/api/top-langs/?username=leopold-jpg&layout=compact&hide_border=true&bg_color=0D1117&title_color=00FF94&text_color=8B949E&langs_count=10&count_private=true&cache_seconds=21600" />
 
 <br/><br/>
 
