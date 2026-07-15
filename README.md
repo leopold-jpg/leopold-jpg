@@ -75,8 +75,8 @@
 <img src="https://raw.githubusercontent.com/leopold-jpg/leopold-jpg/main/assets/sections/activity.svg" width="100%" alt="git log --oneline" />
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#3](https://github.com/leopold-jpg/grundbok/pull/3#issuecomment-4936006284) in [leopold-jpg/grundbok](https://github.com/leopold-jpg/grundbok)
-2. 💪 Opened PR [#3](https://github.com/leopold-jpg/grundbok/pull/3) in [leopold-jpg/grundbok](https://github.com/leopold-jpg/grundbok)
+1. 🎉 Merged PR [#4](https://github.com/leopold-jpg/grundbok/pull/4) in [leopold-jpg/grundbok](https://github.com/leopold-jpg/grundbok)
+2. 💪 Opened PR [#4](https://github.com/leopold-jpg/grundbok/pull/4) in [leopold-jpg/grundbok](https://github.com/leopold-jpg/grundbok)
 <!--END_SECTION:activity-->
 
 <br/>
